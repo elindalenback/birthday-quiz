@@ -1,5 +1,33 @@
+/* Remove default style */
+* {
+    padding: 0;
+    margin: 0;
+}
 
 /* Header Content */
+#header {
+    height: 160px;
+    background-color: #264653;
+    padding-top: 20px;
+}
+
+#header > h1,
+#header > h2 {
+    text-align: center;
+    letter-spacing: 1;
+    color: aliceblue;
+    padding: 10px;
+}
+
+#header > h1 {
+    font-size: 140%;
+    padding-bottom: 15px;
+    text-transform: uppercase;
+}
+
+#header > h2 {
+    font-size: 90%;
+}
 
 /* Main Content */
 
