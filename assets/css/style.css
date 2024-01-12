@@ -4,7 +4,19 @@
     margin: 0;
 }
 
+/* General styles */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* Generic project styles */
+    color: #white;
+}
+
+
+
 /* Header Content */
+
 #header {
     height: 160px;
     background-color: #264653;
@@ -30,9 +42,18 @@
 }
 
 /* Main Content */
-#quiz-background {
-    height: 700px;
+main {
+    /* Make main content take up any surplus space to push footer down */
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #F4A261;
+}
+
+#quiz {
+    height: 700px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -80,6 +101,7 @@
     text-align: center;
     font-size: 140%;
     padding: 10px;
+    color: aliceblue;
 }
 
 #footer > img {
@@ -106,9 +128,9 @@
     }
 
     /* Main Content */
+
+    /* Footer Content */
     #footer > h3 {
         font-size: 200%;
     }
-
-    /* Footer Content */
 }
