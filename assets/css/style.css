@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Poppins:ital,wght@0,200;0,400;1,200&display=swap');
+/* font-family: 'Caveat', cursive;
+font-family: 'Poppins', sans-serif; */
+
 /* Remove default style */
 * {
     padding: 0;
@@ -10,16 +14,22 @@ body {
     display: flex;
     flex-direction: column;
     /* Generic project styles */
-    color: #white;
+    color: #ffffff;
 }
 
+h1, h3 {
+    font-family: 'Caveat', cursive;
+}
 
+p, h2 {
+    font-family: 'Poppins', sans-serif;
+}
 
 /* Header Content */
 
 #header {
     height: 160px;
-    background-color: #264653;
+    background-color: #6B9080;
     padding-top: 20px;
 }
 
@@ -27,18 +37,16 @@ body {
 #header > h2 {
     text-align: center;
     letter-spacing: 1;
-    color: aliceblue;
-    padding: 10px;
+    color: #F6FFF8;
 }
 
 #header > h1 {
-    font-size: 140%;
-    padding-bottom: 15px;
-    text-transform: uppercase;
+    font-size: 200%;
 }
 
 #header > h2 {
     font-size: 90%;
+    padding: 20px;
 }
 
 /* Main Content */
@@ -48,7 +56,7 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #F4A261;
+    background-color: #CCE3DE;
 }
 
 #quiz {
@@ -63,7 +71,7 @@ main {
     height: 500px;
     width: 500px;
     justify-content: center;
-    background-color: #264653;
+    background-color: #A4C3B2;
     display: flex;
     column-count: 1;
     flex-wrap: wrap;
@@ -72,7 +80,7 @@ main {
 #message {
     height: 300px;
     width: 100%;
-    background-color: #E9C46A;
+    background-color: #6B9080;
     text-align: center;
     margin-top: 50px;
     padding-bottom: 20px;
@@ -83,13 +91,15 @@ main {
     box-sizing: border-box;
     width: 200px;
     height: 50px;
+    background-color: #F6FFF8;
+    color: #6B9080;
 }
 
 
 /* Footer Content */
 #footer {
     height: 350px;
-    background-color: #264653;
+    background-color: #6B9080;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -101,7 +111,7 @@ main {
     text-align: center;
     font-size: 140%;
     padding: 10px;
-    color: aliceblue;
+    color: #F6FFF8;
 }
 
 #footer > img {
@@ -120,11 +130,11 @@ main {
     }
 
     #header > h1 {
-        font-size: 180%;
+        font-size: 300%;
     }
 
     #header > h2 {
-        font-size: 110%;
+        font-size: 90%;
     }
 
     /* Main Content */
