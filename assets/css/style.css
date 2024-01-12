@@ -31,4 +31,28 @@
 
 /* Main Content */
 
+
+
 /* Footer Content */
+
+
+/* Responsivness for tablet (768px) and up */
+@media screen and (min-width: 768px) {
+    /* Header Content */
+    #header {
+        padding-top: 30px;
+        height: 135px;
+    }
+
+    #header > h1 {
+        font-size: 180%;
+    }
+
+    #header>h2 {
+        font-size: 110%;
+    }
+
+    /* Main Content */
+
+    /* Footer Content */
+}
