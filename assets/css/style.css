@@ -97,7 +97,7 @@ main {
     flex-direction: column;
 }
 
-.action-button {
+#action-button {
     box-sizing: border-box;
     width: 200px;
     height: 50px;
@@ -111,7 +111,7 @@ main {
     letter-spacing: 1px;
 }
 
-.action-button:hover {
+#action-button:hover {
     background-color: #6B9080;
     color: #F6FFF8;
 }
