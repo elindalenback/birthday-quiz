@@ -138,6 +138,11 @@ input {
     margin-top: 135px;
 }
 
+/* Hide pages */
+.hide {
+    display: none;
+}
+
 /* Footer Content */
 #footer {
     height: 350px;
