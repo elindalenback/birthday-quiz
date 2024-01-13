@@ -97,7 +97,7 @@ main {
     flex-direction: column;
 }
 
-#action-button {
+.action-btn {
     box-sizing: border-box;
     width: 200px;
     height: 50px;
@@ -111,11 +111,32 @@ main {
     letter-spacing: 1px;
 }
 
-#action-button:hover {
+.action-btn:hover {
     background-color: #6B9080;
     color: #F6FFF8;
 }
 
+/* Style for the form */
+#sign-up {
+    margin-top: 150px;
+}
+
+label {
+    display: block;
+    margin-top: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #F6FFF8;
+}
+
+input {
+    height: 30px;
+    width: 200px;
+}
+
+#lets-go-btn {
+    display: block;
+    margin-top: 135px;
+}
 
 /* Footer Content */
 #footer {
