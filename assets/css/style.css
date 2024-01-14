@@ -122,6 +122,10 @@ main {
 }
 
 /* Style for the form */
+#sign-up-page {
+    padding-bottom: 20px;
+}
+
 #sign-up {
     margin-top: 150px;
 }
@@ -138,9 +142,18 @@ input {
     width: 200px;
 }
 
+.error {
+    display: block;
+    margin-top: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    color: black;
+    height: 14px;
+}
+
 #lets-go-btn {
     display: block;
-    margin-top: 135px;
+    margin-top: 80px;
 }
 
 /* Style for Quiz page */

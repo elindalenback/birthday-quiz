@@ -30,13 +30,38 @@ function displaySignUpPage() {
 setupSignUpButton();
 
 function setupLetsGoButton() {
-    /** Connect js to the slets-go-btn in html */
     let letsGoButton = document.getElementById("lets-go-btn");
 
-    /** When button is clicked - function */
     letsGoButton.addEventListener("click", function (e) {
-        displayQuizRules();
+        if (validateSignUpForm()) {
+            displayQuizRules();
+        }
     });
+}
+
+function validateSignUpForm() {
+    let emailInput = document.getElementById('email');
+    let teamNameInput = document.getElementById('teamName');
+
+    // Check if both email and team name are filled out correctly
+    if (emailInput.checkValidity() && teamNameInput.checkValidity()) {
+        return true;
+    } else {
+        // Display custom error messages
+        if (!emailInput.checkValidity()) {
+            document.getElementById('emailError').innerText = 'Please enter a valid email address.';
+        } else {
+            document.getElementById('emailError').innerText = '';
+        }
+
+        if (!teamNameInput.checkValidity()) {
+            document.getElementById('teamNameError').innerText = 'Please enter a team name.';
+        } else {
+            document.getElementById('teamNameError').innerText = '';
+        }
+
+        return false;
+    }
 }
 
 /**
@@ -179,6 +204,7 @@ function handleNextButton() {
     }
 }
 
+// Question and answers for the Quiz
 const questions = [
     {
         question: "What is Amanda's favorite color?",
