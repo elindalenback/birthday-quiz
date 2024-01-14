@@ -157,6 +157,23 @@ function selectAnswer(e) {
     nextBtn.style.display = "block";
 }
 
+nextBtn.addEventListener("click", ()=> {
+    if(currentQuestionIndex < questions.length){
+        handleNextButton();
+    } else {
+        startGame();
+    }
+})
+
+function handleNextButton() {
+    currentQuestionIndex++;
+    if(currentQuestionIndex < questions.length){
+        setNextQuestion();
+    } else {
+        showScore();
+    }
+}
+
 const questions = [
     {
         question: "What is Amanda's favorite color?",
