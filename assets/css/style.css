@@ -171,6 +171,14 @@ input {
     font-size: 25px;
 }
 
+.correct {
+    background-color: #A4C3B2;
+}
+
+.incorrect {
+    background-color: #D99898;
+}
+
 /* Hide pages */
 .hide {
     display: none;
