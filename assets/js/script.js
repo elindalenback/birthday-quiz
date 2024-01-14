@@ -29,6 +29,10 @@ function displaySignUpPage() {
 
 setupSignUpButton();
 
+/**
+ * Enables the "Let's Go" button only when the form validation is successful.
+ * Ensures that the button becomes clickable upon successful form validation.
+ */
 function setupLetsGoButton() {
     let letsGoButton = document.getElementById("lets-go-btn");
 
@@ -39,6 +43,12 @@ function setupLetsGoButton() {
     });
 }
 
+/**
+ * Validates the sign-up form by checking if both email and team name inputs are filled out correctly.
+ * Displays custom error messages if validation fails, providing user-friendly feedback.
+ *
+ * returns boolean - True if the form is valid, false otherwise.
+ */
 function validateSignUpForm() {
     let emailInput = document.getElementById('email');
     let teamNameInput = document.getElementById('teamName');
@@ -131,6 +141,11 @@ const nextBtn = document.getElementById("next-btn");
 let currentQuestionIndex = 0;
 let score = 0;
 
+/**
+ * Starts the quiz game by initializing necessary variables and displaying the first question.
+ * Resets the game state, sets the current question index to 0, resets the score, and calls
+ * the function to set up and display the first question.
+ */
 function startGame() {
     console.log("Game Started");
     nextButton.classList.add('hide');
@@ -139,6 +154,12 @@ function startGame() {
     setNextQuestion();
 }
 
+/**
+ * Sets up and displays the next question in the quiz.
+ * Resets the previous question state, retrieves the current question from the array,
+ * updates the question element with the current question's text, creates buttons for each
+ * answer option, and attaches click event listeners to handle user input.
+ */
 function setNextQuestion() {
     resetState();
     let currentQuestion = questions[currentQuestionIndex];
@@ -157,6 +178,10 @@ function setNextQuestion() {
     });
 }
 
+/**
+ * Resets the state of the quiz after each question.
+ * Hides the next button, removes all answer buttons, and prepares for the next question.
+ */
 function resetState() {
     nextBtn.style.display = "none";
     while (answerBtns.firstChild) {
@@ -164,15 +189,24 @@ function resetState() {
     }
 }
 
+/**
+ * Handles the user's selection of an answer.
+ * Checks if the selected answer is correct, updates styles accordingly, and adjusts the score.
+ * Disables all answer buttons and displays the next button to proceed to the next question.
+ *
+ * e - The click event object containing information about the selected answer button.
+ */
 function selectAnswer(e) {
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
+    // Update styles based on correctness and adjust the score
     if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
     } else {
         selectedBtn.classList.add("incorrect");
     }
+    // Disable all answer buttons and display the next button
     Array.from(answerBtns.children).forEach(button => {
         if (button.dataset.correct === "true") {
             button.classList.add("correct");
@@ -182,7 +216,9 @@ function selectAnswer(e) {
     nextBtn.style.display = "block";
 }
 
+// Event listener for the next button click
 nextBtn.addEventListener("click", () => {
+    // Check if there are more questions or restart the game
     if (currentQuestionIndex < questions.length) {
         handleNextButton();
     } else {
@@ -190,13 +226,24 @@ nextBtn.addEventListener("click", () => {
     }
 });
 
+/**
+ * Displays the final score after completing all quiz questions.
+ * Resets the state, updates the question element with the user's score,
+ * and concludes the quiz by presenting the overall performance.
+ */
 function showScore() {
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
 }
 
+/**
+ * Handles the click event for the next button.
+ * Increments the current question index and either sets up the next question
+ * or concludes the quiz by displaying the final score if all questions have been answered.
+ */
 function handleNextButton() {
     currentQuestionIndex++;
+    // Check if there are more questions or show the final score
     if (currentQuestionIndex < questions.length) {
         setNextQuestion();
     } else {
