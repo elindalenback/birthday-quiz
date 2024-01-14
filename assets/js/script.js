@@ -94,10 +94,10 @@ function displayQuizPage() {
  * The game has been modified to suit the context of this Birthday Quiz.
  */
 
-const startButton = document.getElementById("start-quiz-btn")
-const nextButton = document.getElementById("next-btn")
+const startButton = document.getElementById("start-quiz-btn");
+const nextButton = document.getElementById("next-btn");
 
-startButton.addEventListener('click', startGame)
+startButton.addEventListener('click', startGame);
 
 const questionElement = document.getElementById("question");
 const answerBtns = document.getElementById("answer-btns");
@@ -108,7 +108,7 @@ let score = 0;
 
 function startGame() {
     console.log("Game Started");
-    nextButton.classList.add('hide')
+    nextButton.classList.add('hide');
     currentQuestionIndex = 0;
     score = 0;
     setNextQuestion();
@@ -125,7 +125,7 @@ function setNextQuestion() {
         button.innerHTML = answer.text;
         button.classList.add("btn");
         answerBtns.appendChild(button);
-        if(answer.correct) {
+        if (answer.correct) {
             button.dataset.correct = answer.correct;
         }
         button.addEventListener("click", selectAnswer);
@@ -134,7 +134,7 @@ function setNextQuestion() {
 
 function resetState() {
     nextBtn.style.display = "none";
-    while(answerBtns.firstChild){
+    while (answerBtns.firstChild) {
         answerBtns.removeChild(answerBtns.firstChild);
     }
 }
@@ -142,14 +142,14 @@ function resetState() {
 function selectAnswer(e) {
     const selectedBtn = e.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
-    if(isCorrect) {
+    if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
     } else {
         selectedBtn.classList.add("incorrect");
     }
     Array.from(answerBtns.children).forEach(button => {
-        if(button.dataset.correct === "true"){
+        if (button.dataset.correct === "true") {
             button.classList.add("correct");
         }
         button.disabled = true;
@@ -157,22 +157,22 @@ function selectAnswer(e) {
     nextBtn.style.display = "block";
 }
 
-nextBtn.addEventListener("click", ()=> {
-    if(currentQuestionIndex < questions.length){
+nextBtn.addEventListener("click", () => {
+    if (currentQuestionIndex < questions.length) {
         handleNextButton();
     } else {
         startGame();
     }
-})
+});
 
-function showScore(){
+function showScore() {
     resetState();
     questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
 }
 
 function handleNextButton() {
     currentQuestionIndex++;
-    if(currentQuestionIndex < questions.length){
+    if (currentQuestionIndex < questions.length) {
         setNextQuestion();
     } else {
         showScore();

@@ -84,6 +84,8 @@ main {
     display: flex;
     column-count: 1;
     flex-wrap: wrap;
+    box-shadow: 0 0 10px 2px;
+    color: #354F52;
 }
 
 #message-type {
