@@ -24,7 +24,7 @@
         <!-- Quiz Area -->
         <div class="quiz-area">
           <div id="message-type">
-            <div id="hello-page">
+            <div id="hello-page" class="hide">
               <h4 class="hello-page">Hello everybody!</h4>
               <p class="hello-page">
                 So glad to see you here to take this birthday quiz about the
@@ -79,17 +79,17 @@
                 Link to video: 'https://www.youtube.com/watch?v=riDzcEQbX6k'
                 Link can also be found in my README
             -->
-            <div id="question-page" class="hide" >
-                <h4 id="question">Question</h4>
-                <div id="answer-btns" class="btn-grid">
-                    <button class="btn">Answer 1</button>
-                    <button class="btn">Answer 2</button>
-                    <button class="btn">Answer 3</button>
-                    <button class="btn">Answer 4</button>
-                </div>
+            <div id="quiz-page">
+              <h4 id="question">Question</h4>
+              <div id="answer-btns" class="btn-grid">
+                <button class="btn">Answer 1</button>
+                <button class="btn">Answer 2</button>
+                <button class="btn">Answer 3</button>
+                <button class="btn">Answer 4</button>
+              </div>
             </div>
           </div>
-          <button class="hello-page action-btn" type="button" id="sign-up-btn">
+          <button class="hello-page action-btn hide" type="button" id="sign-up-btn">
             sign up
           </button>
           <button
@@ -99,6 +99,7 @@
           >
             start quiz
           </button>
+          <button id="next-btn" class="action-btn">next</button>
         </div>
         <!-- End of Quiz Area -->
       </section>
