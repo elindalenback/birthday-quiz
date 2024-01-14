@@ -165,6 +165,11 @@ nextBtn.addEventListener("click", ()=> {
     }
 })
 
+function showScore(){
+    resetState();
+    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+}
+
 function handleNextButton() {
     currentQuestionIndex++;
     if(currentQuestionIndex < questions.length){
