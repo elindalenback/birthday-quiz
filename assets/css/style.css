@@ -152,14 +152,14 @@ input {
     font-size: 25px;
     font-family: 'Poppins', sans-serif;
     transition: all 0.3s;
-    border: 2px solid #6B9080;
+    border: 2px solid #CCE3DE;
     letter-spacing: 1px;
     margin: 10px;
 }
 
 .btn:hover {
-    background-color: #6B9080;
-    color: #F6FFF8;
+    background-color: #CCE3DE;
+    color: #6B9080;
 }
 
 .btn-grid {
