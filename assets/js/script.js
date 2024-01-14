@@ -115,6 +115,7 @@ function startGame() {
 }
 
 function setNextQuestion() {
+    resetState();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
@@ -127,13 +128,20 @@ function setNextQuestion() {
     });
 }
 
+function resetState() {
+    nextBtn.style.display = "none";
+    while(answerBtns.firstChild){
+        answerBtns.removeChild(answerBtns.firstChild);
+    }
+}
+
 function selectAnswer() {
 
 }
 
 const questions = [
     {
-        question: "What is Amanda's favorite color",
+        question: "What is Amanda's favorite color?",
         answers: [
             { text: "Blue", correct: false },
             { text: "Green", correct: true },
