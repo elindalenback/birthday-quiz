@@ -7,6 +7,7 @@ function setupSignUpButton() {
         displaySignUpPage();
     });
 }
+
 /**
  * This function will:
  * 1. Start when clicking the 'sign-up-btn'
@@ -37,6 +38,7 @@ function setupLetsGoButton() {
         displayQuizRules();
     });
 }
+
 /**
 * This function will:
 * 1. Start when clicking the 'lets-go-btn'
@@ -54,4 +56,29 @@ function displayQuizRules() {
     let startQuizBtn = document.getElementById("start-quiz-btn");
     rulesPage.classList.remove('hide');
     startQuizBtn.classList.remove('hide');
+
+    setupStartQuizButton();
+}
+
+function setupStartQuizButton() {
+    /** Connect js to the slets-go-btn in html */
+    let startQuizBtn = document.getElementById("start-quiz-btn");
+
+    /** When button is clicked - function */
+    startQuizBtn.addEventListener("click", function (e) {
+        displayQuizPage();
+    });
+}
+
+function displayQuizPage() {
+    // Remove the existing elements with class 'rules-page' by adding class 'hide'
+    let rulesPage = document.getElementById("rules-page");
+    let startQuizBtn = document.getElementById("start-quiz-btn");
+    rulesPage.classList.add('hide');
+    startQuizBtn.classList.add('hide');
+    // Show elements with class "quiz-page" by removing class 'hide'
+    let quizPage = document.getElementById("quiz-page");
+    let nextBtn = document.getElementById("next-btn");
+    quizPage.classList.remove('hide');
+    nextBtn.classList.remove('hide');
 }

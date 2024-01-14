@@ -24,7 +24,8 @@
         <!-- Quiz Area -->
         <div class="quiz-area">
           <div id="message-type">
-            <div id="hello-page" class="hide">
+            <!-- Hello Everyone Page -->
+            <div id="hello-page">
               <h4 class="hello-page">Hello everybody!</h4>
               <p class="hello-page">
                 So glad to see you here to take this birthday quiz about the
@@ -35,6 +36,7 @@
                 go! Best of luck!
               </p>
             </div>
+            <!-- Sign Up Page -->
             <div id="sign-up-page" class="hide">
               <h4 class="sign-up-page" id="sign-up">Sign Up!</h4>
 
@@ -50,6 +52,7 @@
                   required="true"
                 />
 
+                <!-- Button at Sign Up page (Submits information) -->
                 <button
                   class="sign-up-page action-btn"
                   type="button"
@@ -59,6 +62,8 @@
                 </button>
               </form>
             </div>
+
+            <!-- Quiz Rules Page -->
             <div id="rules-page" class="hide">
               <h4 class="rules-page">The Quiz Rules:</h4>
               <p class="rules-page">
@@ -74,12 +79,14 @@
                 of luck!
               </p>
             </div>
+            
+            <!-- Quiz Page -->
             <!-- 
                 This quiz was inspired by 'Web Dev Simplified' on YouTube 
                 Link to video: 'https://www.youtube.com/watch?v=riDzcEQbX6k'
                 Link can also be found in my README
             -->
-            <div id="quiz-page">
+            <div id="quiz-page" class="hide">
               <h4 id="question">Question</h4>
               <div id="answer-btns" class="btn-grid">
                 <button class="btn">Answer 1</button>
@@ -89,9 +96,13 @@
               </div>
             </div>
           </div>
-          <button class="hello-page action-btn hide" type="button" id="sign-up-btn">
+
+          <!-- Button at Hello Page (Goes to the form)-->
+          <button class="hello-page action-btn" type="button" id="sign-up-btn">
             sign up
           </button>
+          
+          <!-- Button at Rules Page (Starts the Quiz) -->
           <button
             class="rules-page action-btn hide"
             type="button"
@@ -99,7 +110,9 @@
           >
             start quiz
           </button>
-          <button id="next-btn" class="action-btn">next</button>
+          
+          <!-- Next button inside the Quiz -->
+          <button id="next-btn" class="action-btn hide">next</button>
         </div>
         <!-- End of Quiz Area -->
       </section>
