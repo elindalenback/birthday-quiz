@@ -47,7 +47,7 @@ function setupLetsGoButton() {
  * Validates the sign-up form by checking if both email and team name inputs are filled out correctly.
  * Displays custom error messages if validation fails, providing user-friendly feedback.
  *
- * returns boolean - True if the form is valid, false otherwise.
+ * returns boolean - true if the form is valid, false otherwise.
  */
 function validateSignUpForm() {
     let emailInput = document.getElementById('email');
@@ -226,14 +226,20 @@ nextBtn.addEventListener("click", () => {
     }
 });
 
+var teamName; // Declare teamName globally
+
+function storeTeamName() {
+    teamName = document.getElementById('teamName').value;
+}
 /**
  * Displays the final score after completing all quiz questions.
  * Resets the state, updates the question element with the user's score,
  * and concludes the quiz by presenting the overall performance.
  */
 function showScore() {
+    storeTeamName();
     resetState();
-    questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
+    questionElement.innerHTML = `Congratulations ${teamName}! You scored ${score} out of ${questions.length}!`;
 }
 
 /**
