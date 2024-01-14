@@ -157,9 +157,13 @@ input {
     margin: 10px;
 }
 
-.btn:hover {
+.btn:hover:not([disabled]) {
     background-color: #CCE3DE;
     color: #6B9080;
+}
+
+.btn:disabled {
+    cursor: no-drop;
 }
 
 .btn-grid {
