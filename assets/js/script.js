@@ -82,3 +82,144 @@ function displayQuizPage() {
     quizPage.classList.remove('hide');
     nextBtn.classList.remove('hide');
 }
+
+/**
+ * The functions for the birthday quiz game start here.
+ * This quiz game was inspired by 'Web Dev Simplified' 
+ * and 'GreatStack' on YouTube.
+ * Original Tutorial Links: 
+ * 'https://www.youtube.com/watch?v=riDzcEQbX6k'
+ * 'https://www.youtube.com/watch?v=PBcqGxrr9g8'
+ * You can also find the links in the README file.
+ * The game has been modified to suit the context of this Birthday Quiz.
+ */
+
+const startButton = document.getElementById("start-quiz-btn")
+const nextButton = document.getElementById("next-btn")
+
+startButton.addEventListener('click', startGame)
+
+const questionElement = document.getElementById("question");
+const answerBtns = document.getElementById("answer-btns");
+const nextBtn = document.getElementById("next-btn");
+
+let currentQuestionIndex = 0;
+let score = 0;
+
+function startGame() {
+    console.log("Game Started");
+    nextButton.classList.add('hide')
+    currentQuestionIndex = 0;
+    score = 0;
+    setNextQuestion();
+}
+
+function setNextQuestion() {
+    let currentQuestion = questions[currentQuestionIndex];
+    let questionNo = currentQuestionIndex + 1;
+    questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
+
+    currentQuestion.answers.forEach(answer => {
+        const button = document.createElement("button");
+        button.innerHTML = answer.text;
+        button.classList.add("btn");
+        answerBtns.appendChild(button);
+    });
+}
+
+function selectAnswer() {
+
+}
+
+const questions = [
+    {
+        question: "What is Amanda's favorite color",
+        answers: [
+            { text: "Blue", correct: false },
+            { text: "Green", correct: true },
+            { text: "Pink", correct: false },
+            { text: "Orange", correct: false },
+        ]
+    },
+    {
+        question: "Amanda's top childhood game?",
+        answers: [
+            { text: "Hide and seek", correct: false },
+            { text: "Tag", correct: false },
+            { text: "Candy Land", correct: true },
+            { text: "Simon says", correct: false },
+        ]
+    },
+    {
+        question: "Dream pet for Amanda?",
+        answers: [
+            { text: "Dog", correct: true },
+            { text: "Cat", correct: false },
+            { text: "Rabbit", correct: false },
+            { text: "Turtle", correct: false },
+        ]
+    },
+    {
+        question: "Amanda's preferred ice cream?",
+        answers: [
+            { text: "Chocolate", correct: false },
+            { text: "Vanilla", correct: false },
+            { text: "Strawberry", correct: false },
+            { text: "Mint chip", correct: true },
+        ]
+    },
+    {
+        question: "Amanda's hidden talent?",
+        answers: [
+            { text: "Singing", correct: false },
+            { text: "Dancing", correct: false },
+            { text: "Painting", correct: true },
+            { text: "Juggling", correct: false },
+        ]
+    },
+    {
+        question: "Ideal vacation spot for Amanda?",
+        answers: [
+            { text: "Beach", correct: true },
+            { text: "Mountains", correct: false },
+            { text: "City", correct: false },
+            { text: "Forest", correct: false },
+        ]
+    },
+    {
+        question: "Amanda's favorite school subject?",
+        answers: [
+            { text: "Math", correct: false },
+            { text: "Science", correct: false },
+            { text: "Art", correct: false },
+            { text: "History", correct: true },
+        ]
+    },
+    {
+        question: "Amanda's go-to snack?",
+        answers: [
+            { text: "Popcorn", correct: true },
+            { text: "Chips", correct: false },
+            { text: "Fruit", correct: false },
+            { text: "Cookies", correct: false },
+        ]
+    },
+    {
+        question: "Amanda's music preference?",
+        answers: [
+            { text: "Pop", correct: false },
+            { text: "Rock", correct: true },
+            { text: "Hip-hop", correct: false },
+            { text: "Classical", correct: false },
+        ]
+    },
+    {
+        question: "Amanda's dream superpower?",
+        answers: [
+            { text: "Invisibility", correct: false },
+            { text: "Teleportation", correct: true },
+            { text: "Flying", correct: false },
+            { text: "Time travel", correct: false },
+        ]
+    }
+];
