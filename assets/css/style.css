@@ -236,6 +236,30 @@ input {
     padding: 20px;
 }
 
+/* Responsivness for mobile (425px) and down */
+@media screen and (max-width: 425px) {
+    #header {
+        height: 100%;
+    }
+    
+    .quiz-area {
+        padding-top: 20px;
+        width: 100%;
+    }
+   
+    #question {
+        padding-bottom: 10px;
+    }
+
+    #answer-btns {
+        padding-bottom: 15px;
+    }
+
+    .btn {
+        width: 240px;
+    }
+}
+
 /* Responsivness for tablet (768px) and up */
 @media screen and (min-width: 768px) {
 
