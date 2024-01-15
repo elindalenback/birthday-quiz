@@ -27,14 +27,17 @@
             <!-- Hello Everyone Page -->
             <div id="hello-page">
               <h4 class="hello-page">Hello everybody!</h4>
-              <p class="hello-page">
-                So glad to see you here to take this birthday quiz about the
-                birthday person herself: Amanda! Before you start the quiz you
-                need to sign up. You do this by yourselves our you can choose to
-                team up, your choice! Just click the button below and fill out
-                the information Team name and Email and then you are ready to
-                go! Best of luck!
+              <p>
+                Excited to have you here for Amanda's birthday quiz! Before you
+                dive in, sign up solo or team up – it's up to you!
               </p>
+
+              <p>
+                Just hit the button, provide your Team name and Email, and
+                you're good to go!
+              </p>
+
+              <p>Best of luck!</p>
             </div>
             <!-- Sign Up Page -->
             <div id="sign-up-page" class="hide">
@@ -42,18 +45,13 @@
 
               <form id="myForm" class="sign-up-page" method="post">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required/>
+                <input type="email" id="email" name="email" required />
                 <span id="emailError" class="error"></span>
 
                 <label for="teamName">Team Name:</label>
-                <input
-                  type="text"
-                  id="teamName"
-                  name="teamName"
-                  required
-                />
+                <input type="text" id="teamName" name="teamName" required />
                 <span id="teamNameError" class="error"></span>
-                
+
                 <!-- Button at Sign Up page (Submits information) -->
                 <button
                   class="sign-up-page action-btn"
@@ -68,20 +66,18 @@
             <!-- Quiz Rules Page -->
             <div id="rules-page" class="hide">
               <h4 class="rules-page">The Quiz Rules:</h4>
-              <p class="rules-page">
-                The rules are simple to follow. When you press 'Start Quiz'
-                there will be a question displayed and 4 options to choose for
-                each question. Choose the option you think is the correct one
-                and if it is correct the color will turn green. If it is the
-                wrong answer the color will turn red. When you worked your way
-                through all the questions you will get your score as well as the
-                option to send it to your email. Why don't you forward that
-                email to Amanda and let her know how it went! After this feel
-                free to redo the quiz as many times as you want. Enjoy and best
-                of luck!
+              <p>
+                For each question,
+                select the correct option – watch it turn green for right and
+                red for wrong. If you miss a question, the correct answer will
+                be highlighted in green.
               </p>
+
+              <p>After completing all questions, you'll receive your score.</p>
+
+              <p>Enjoy the quiz, and best of luck!</p>
             </div>
-            
+
             <!-- Quiz Page -->
             <!-- 
                 This quiz was inspired by 'Web Dev Simplified' on YouTube 
@@ -104,7 +100,7 @@
           <button class="hello-page action-btn" type="button" id="sign-up-btn">
             sign up
           </button>
-          
+
           <!-- Button at Rules Page (Starts the Quiz) -->
           <button
             class="rules-page action-btn hide"
@@ -113,12 +109,14 @@
           >
             start quiz
           </button>
-          
+
           <!-- Next button inside the Quiz -->
           <button id="next-btn" class="action-btn hide">next</button>
 
           <!-- Back to start -->
-          <button id="restart-button" class="action-btn hide">back to start</button>
+          <button id="restart-button" class="action-btn hide">
+            back to start
+          </button>
         </div>
         <!-- End of Quiz Area -->
       </section>
