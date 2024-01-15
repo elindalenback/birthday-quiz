@@ -18,18 +18,18 @@ body {
 }
 
 h1,
-h3 {
+h4 {
     font-family: 'Caveat', cursive;
 }
 
 p,
 h2,
-h4 {
+h3 {
     font-family: 'Poppins', sans-serif;
     color: #F6FFF8;
 }
 
-h4 {
+h3 {
     font-size: 20px;
     padding-bottom: 10px;
 }
@@ -223,7 +223,7 @@ input {
     padding-top: 40px;
 }
 
-#footer>h3 {
+#footer>h4 {
     text-align: center;
     font-size: 140%;
     padding: 10px;
@@ -281,7 +281,7 @@ input {
     /* Main Content */
 
     /* Footer Content */
-    #footer>h3 {
+    #footer>h4 {
         font-size: 200%;
     }
 }
