@@ -45,7 +45,7 @@ h4 {
 #header>h1,
 #header>h2 {
     text-align: center;
-    letter-spacing: 1;
+    letter-spacing: 1px;
     color: #F6FFF8;
 }
 
