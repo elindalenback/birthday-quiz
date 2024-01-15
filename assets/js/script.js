@@ -7,7 +7,7 @@ function setupSignUpButton() {
         displaySignUpPage();
     });
 }
-
+setupSignUpButton();
 /**
  * This function will:
  * 1. Start when clicking the 'sign-up-btn'
@@ -27,7 +27,7 @@ function displaySignUpPage() {
     setupLetsGoButton();
 }
 
-setupSignUpButton();
+
 
 /**
  * Enables the "Let's Go" button only when the form validation is successful.
@@ -240,6 +240,7 @@ function showScore() {
     storeTeamName();
     resetState();
     questionElement.innerHTML = `Congratulations ${teamName}! You scored ${score} out of ${questions.length}!`;
+
 }
 
 /**
