@@ -4,17 +4,32 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
+
     <!-- Stylesheet to css -->
     <link rel="stylesheet" href="assets/css/style.css" />
 
     <!-- Favicon and title -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
     <title>Amanda's Birthday Quiz</title>
   </head>
+
   <body>
     <!-- Header content -->
     <header>
@@ -53,11 +68,23 @@
 
               <form id="myForm" class="sign-up-page" method="post">
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required />
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="your.email@example.com"
+                />
                 <span id="emailError" class="error"></span>
 
                 <label for="teamName">Team Name:</label>
-                <input type="text" id="teamName" name="teamName" required />
+                <input
+                  type="text"
+                  id="teamName"
+                  name="teamName"
+                  required
+                  placeholder="Team Birthday Bashers"
+                />
                 <span id="teamNameError" class="error"></span>
 
                 <!-- Button at Sign Up page (Submits information) -->
@@ -75,10 +102,9 @@
             <div id="rules-page" class="hide">
               <h4 class="rules-page">The Quiz Rules:</h4>
               <p>
-                For each question,
-                select the correct option – watch it turn green for right and
-                red for wrong. If you miss a question, the correct answer will
-                be highlighted in green.
+                For each question, select the correct option – watch it turn
+                green for right and red for wrong. If you miss a question, the
+                correct answer will be highlighted in green.
               </p>
 
               <p>After completing all questions, you'll receive your score.</p>
