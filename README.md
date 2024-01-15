@@ -32,3 +32,65 @@ Visit the deployed site: [Amanda's Birthday Quiz](https://elindalenback.github.i
 
   - As a frequent user, I want to play the birthday quiz periodically to celebrate Amanda's birthday and have a good time.
   - As a frequent user, I want to share the quiz with friends and family to celebrate together.
+
+## Design
+
+Colour palette from Coolors
+
+![Colour Palette](docs/readme_images/palette.png)
+
+## Color Palette Description
+
+**#4E6A5E (Dark Green):**
+
+- **Usage:** Header Background, Footer Background
+- **Description:** Creates a sense of calm and elegance, framing the quiz with a visually appealing structure.
+
+**#A4C3B2 (Light Green):**
+
+- **Usage:** Main Background of the Quiz Area
+- **Description:** Serves as the main background for the quiz area, creating a pleasant and inviting environment for the quiz questions.
+
+**#CCE3DE (Light Blue-Green):**
+
+- **Usage:** Overall Background of the Main Content
+- **Description:** Applied to the main content background, providing a harmonious and soothing backdrop for the entire webpage.
+
+**#F6FFF8 (Light Mint):**
+
+- **Usage:** Button Backgrounds, Text Color, Quiz Page Background
+- **Description:** Used for button backgrounds, ensuring they stand out while maintaining a soft and inviting appearance. Also applied to text color and quiz page background for a refreshing touch.
+
+**#D99898 (Light Salmon):**
+
+- **Usage:** Incorrect Answer Indication in the Quiz
+- **Description:** Highlights incorrect answers during the quiz, providing a noticeable visual cue.
+
+These color choices collectively create a cohesive and visually pleasing experience for users interacting with Amanda's Birthday Quiz. The combination of greens and blues conveys a celebratory and lively atmosphere, while the mint and salmon accents add a touch of vibrancy and engagement.
+
+### Fonts
+
+The website employs the 'Poppins' font as the main typeface, providing a clean and modern appearance. Additionally, 'Caveat' in a cursive style is utilized for specific elements such as headers, adding an elegant and personal touch. These fonts where imported via [Google Fonts](https://fonts.google.com/).
+
+In case there are any difficulties loading the primary fonts, the fallback 'sans-serif' is in place to ensure a legible and consistent text experience throughout the site. For the 'Caveat' font the style cursive is set to maintain the personal touch even if the font for some reason is not loading correctly.
+
+### Layout
+
+The site is a single page with 5 sections:
+
+- Welcome message
+- Sign up for Team
+- Quiz Rules
+- Quiz Game
+- Score
+
+### Wireframes
+
+Wireframes were produced using Balsamiq.
+
+ <details>
+
+<summary>Wireframe</summary>
+
+![Desktop Wireframe](docs/wireframes/wireframe-birthday-quiz.png)
+ </details>
