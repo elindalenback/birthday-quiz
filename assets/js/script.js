@@ -136,6 +136,7 @@ const restartButton = document.getElementById("restart-button");
 startButton.addEventListener('click', startGame);
 
 const questionElement = document.getElementById("question");
+const scoreElement = document.getElementById("score");
 const answerBtns = document.getElementById("answer-btns");
 const nextBtn = document.getElementById("next-btn");
 
@@ -240,7 +241,9 @@ function storeTeamName() {
 function showScore() {
     storeTeamName();
     resetState();
-    questionElement.innerHTML = `Congratulations ${teamName}! You scored ${score} out of ${questions.length}!`;
+    questionElement.classList.add("hide");
+    scoreElement.classList.remove("hide");
+    scoreElement.innerHTML = `Congratulations ${teamName}! You scored ${score} out of ${questions.length}!`;
     restartButton.classList.remove('hide');
     restartButton.addEventListener('click', function () {
         window.location.href = window.location.href; // Reload the page by setting the URL to itself
