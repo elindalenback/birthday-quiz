@@ -7,7 +7,7 @@ function setupSignUpButton() {
         displaySignUpPage();
     });
 }
-setupSignUpButton();
+
 /**
  * This function will:
  * 1. Start when clicking the 'sign-up-btn'
@@ -27,7 +27,7 @@ function displaySignUpPage() {
     setupLetsGoButton();
 }
 
-
+setupSignUpButton();
 
 /**
  * Enables the "Let's Go" button only when the form validation is successful.
@@ -131,6 +131,7 @@ function displayQuizPage() {
 
 const startButton = document.getElementById("start-quiz-btn");
 const nextButton = document.getElementById("next-btn");
+const restartButton = document.getElementById("restart-button");
 
 startButton.addEventListener('click', startGame);
 
@@ -240,7 +241,11 @@ function showScore() {
     storeTeamName();
     resetState();
     questionElement.innerHTML = `Congratulations ${teamName}! You scored ${score} out of ${questions.length}!`;
-
+    restartButton.classList.remove('hide');
+    restartButton.addEventListener('click', function () {
+        window.location.href = window.location.href; // Reload the page by setting the URL to itself
+    });
+    
 }
 
 /**
