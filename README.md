@@ -8,6 +8,48 @@ Visit the deployed site: [Amanda's Birthday Quiz](https://elindalenback.github.i
 
 ![Amanda's Birhday Quiz](docs/readme_images/responsive-welcome.png)
 
+Table of Contents
+
+- [Amanda's Birthday Quiz](#amanda-s-birthday-quiz)
+  * [Site Owner Goals](#site-owner-goals)
+  * [User Stories](#user-stories)
+    + [First Time User](#first-time-user)
+    + [Returning user](#returning-user)
+    + [Frequent user](#frequent-user)
+  * [Design](#design)
+    + [Color Palette Description](#color-palette-description)
+    + [Fonts](#fonts)
+    + [Layout](#layout)
+    + [Wireframes](#wireframes)
+  * [Features](#features)
+    + [Welcome Page](#welcome-page)
+    + [Sign-Up Page](#sign-up-page)
+    + [Quiz Rules](#quiz-rules)
+    + [Quiz Page](#quiz-page)
+    + [Final Score](#final-score)
+    + [Quiz Navigation](#quiz-navigation)
+    + [Future Enhancements](#future-enhancements)
+  * [Testing](#testing)
+    + [Validator Testing](#validator-testing)
+      - [Accessibility](#accessibility)
+    + [Form Testing](#form-testing)
+    + [Links Testing](#links-testing)
+    + [Device Testing](#device-testing)
+    + [Friends and Family User Testing](#friends-and-family-user-testing)
+    + [Fixed Bugs](#fixed-bugs)
+      - [Issue: HTML Validation not functioning](#issue--html-validation-not-functioning)
+      - [Issue: CSS Validator Error in Letter Spacing](#issue--css-validator-error-in-letter-spacing)
+      - [Issue: Incorrect Favicon Filepath](#issue--incorrect-favicon-filepath)
+    + [Frameworks - Libraries - Programs Used](#frameworks---libraries---programs-used)
+  * [Deployment](#deployment)
+  * [Credits](#credits)
+    + [Content](#content)
+    + [Media](#media)
+    + [Acknowledgement](#acknowledgement)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 ## Site Owner Goals
 
 - Provide users with an enjoyable and engaging birthday quiz experience.
