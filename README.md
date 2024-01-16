@@ -10,42 +10,37 @@ Visit the deployed site: [Amanda's Birthday Quiz](https://elindalenback.github.i
 
 Table of Contents
 
-- [Amanda's Birthday Quiz](#amanda-s-birthday-quiz)
-  * [Site Owner Goals](#site-owner-goals)
-  * [User Stories](#user-stories)
-    + [First Time User](#first-time-user)
-    + [Returning user](#returning-user)
-    + [Frequent user](#frequent-user)
-  * [Design](#design)
-    + [Color Palette Description](#color-palette-description)
-    + [Fonts](#fonts)
-    + [Layout](#layout)
-    + [Wireframes](#wireframes)
-  * [Features](#features)
-    + [Welcome Page](#welcome-page)
-    + [Sign-Up Page](#sign-up-page)
-    + [Quiz Rules](#quiz-rules)
-    + [Quiz Page](#quiz-page)
-    + [Final Score](#final-score)
-    + [Quiz Navigation](#quiz-navigation)
-    + [Future Enhancements](#future-enhancements)
-  * [Testing](#testing)
-    + [Validator Testing](#validator-testing)
-      - [Accessibility](#accessibility)
-    + [Form Testing](#form-testing)
-    + [Links Testing](#links-testing)
-    + [Device Testing](#device-testing)
-    + [Friends and Family User Testing](#friends-and-family-user-testing)
-    + [Fixed Bugs](#fixed-bugs)
-      - [Issue: HTML Validation not functioning](#issue--html-validation-not-functioning)
-      - [Issue: CSS Validator Error in Letter Spacing](#issue--css-validator-error-in-letter-spacing)
-      - [Issue: Incorrect Favicon Filepath](#issue--incorrect-favicon-filepath)
-    + [Frameworks - Libraries - Programs Used](#frameworks---libraries---programs-used)
-  * [Deployment](#deployment)
-  * [Credits](#credits)
-    + [Content](#content)
-    + [Media](#media)
-    + [Acknowledgement](#acknowledgement)
+- [Amanda's Birthday Quiz](#amandas-birthday-quiz)
+  - [Site Owner Goals](#site-owner-goals)
+  - [User Stories](#user-stories)
+  - [Design](#design)
+    - [Color Palette Description](#color-palette-description)
+    - [Fonts](#fonts)
+    - [Layout](#layout)
+    - [Wireframes](#wireframes)
+  - [Features](#features)
+    - [Welcome Page](#welcome-page)
+    - [Sign-Up Page](#sign-up-page)
+    - [Quiz Rules](#quiz-rules)
+    - [Quiz Page](#quiz-page)
+    - [Final Score](#final-score)
+    - [Quiz Navigation](#quiz-navigation)
+    - [Future Enhancements](#future-enhancements)
+  - [Testing](#testing)
+    - [Form Testing](#form-testing)
+    - [Links Testing](#links-testing)
+    - [Device Testing](#device-testing)
+    - [Friends and Family User Testing](#friends-and-family-user-testing)
+    - [Fixed Bugs](#fixed-bugs)
+      - [Issue: HTML Validation not functioning](#issue-html-validation-not-functioning)
+      - [Issue: Incorrect Favicon Filepath](#issue-incorrect-favicon-filepath)
+    - [Known Bugs](#known-bugs)
+    - [Frameworks - Libraries - Programs Used](#frameworks---libraries---programs-used)
+  - [Deployment](#deployment)
+  - [Credits](#credits)
+    - [Content](#content)
+    - [Media](#media)
+    - [Acknowledgement](#acknowledgement)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
@@ -280,13 +275,12 @@ Friends and family members were asked to review the site and documentation to po
 
 **Solution:** Introduced a new `checkValidation` function to resolve conflicts and successfully enforce form input validation.
 
-#### Issue: CSS Validator Error in Letter Spacing
-
-**Solution:** Corrected a CSS validator error by adjusting the `letter-spacing` syntax from "letter-spacing: 1" to the accurate and functional "letter-spacing: 1px."
-
 #### Issue: Incorrect Favicon Filepath
 
 **Solution:** Rectified a wrong filepath to the favicon by updating it to the correct location "assets/favicon/...," ensuring the proper display of the favicon on the website.
+
+### Known Bugs
+Favicon doesn't show in safari on desktop.
 
 ### Frameworks - Libraries - Programs Used
 
@@ -325,6 +319,8 @@ You can break the credits section up into Content and Media, depending on what y
   - The Youtube Video [JAVASCRIPT FOR BEGINNERS: Making Buttons Work](https://www.youtube.com/watch?v=DABVLJjnVUs)
   - [ChatGPT](https://chat.openai.com/)
   - [CodeInstitute](https://codeinstitute.net/)
+  - [W3Schools](https://www.w3schools.com/)  
+  - [Stack Overflow](https://stackoverflow.com/)
 
 ### Media
 
