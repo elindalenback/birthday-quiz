@@ -280,7 +280,7 @@ Friends and family members were asked to review the site and documentation to po
 **Solution:** Rectified a wrong filepath to the favicon by updating it to the correct location "assets/favicon/...," ensuring the proper display of the favicon on the website.
 
 ### Known Bugs
-Favicon doesn't show in safari on desktop.
+Favicon doesn't show in Safari on desktop.
 
 ### Frameworks - Libraries - Programs Used
 
