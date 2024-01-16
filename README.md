@@ -100,6 +100,7 @@ Wireframes were produced using Balsamiq.
 All aspects of the website are responsive, and the features that are consistently available include:
 
 A favicon and a titel in the browser tab.
+
 ![Favicon Cake](docs/readme_images/tab.png)
 
 The header.
@@ -111,6 +112,7 @@ And also the footer.
 All Action Buttons on pages all have hover effect to improve the userexperience.
 ![Start Quiz Button](docs/readme_images/btn.png)
 Hovered:
+
 ![Start Quiz Button Hovered](docs/readme_images/btn-hover.png)
 
 ### Welcome Page
@@ -136,6 +138,7 @@ The Sign-Up page allows users to enter their email and team name to participate 
 ![Sign Up Page](docs/readme_images/sign-up.png)
 
 Validation feedback:
+
 ![Input Validation](docs/readme_images/invalid-input.png)
 
 ### Quiz Rules
@@ -191,4 +194,78 @@ Throughout the quiz, users can navigate seamlessly through various stages. Key n
 
 - Store the team names in an array to check for duplicate entries and ensure uniqueness.
 - Implement functionality to automatically send an email containing the final scores from each team, either to the quiz leader or directly to the participants.
+
+## Testing
+
+- ### Validator Testing
+
+- HTML
+  - No errors were returned when passing through the official [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Felindalenback.github.io%2Fbirthday-quiz-project2%2F)
+- CSS
+  - No errors were found when passing through the official [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Felindalenback.github.io%2Fbirthday-quiz-project2%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv)
+
+-  Javascript
+   - No errors or warnings were returned when passing through the the JSHint Validator
+
+- #### Accessibility
+  
+  - The site achieved a Lighthouse accessibility score of 100% which confirms that the colours and fonts chosen are easy to read and accessible
+  
+![Lighthouse testing](docs/readme_images/lighthouse-quiz.png)
+
+### Form Testing
+
+- The form has been tested to ensure it would not submit without the required input fields being filled in (team name and email address).
+
+### Links Testing
+
+- All navigation links were tested manually to ensure the user is directed to the correct section of the website.
+
+### Device Testing
+
+- The responsive design was also checked using Chrome developer tools across multiple devices with structural integrity holding for the various sizes. The website performed as intended.
+  
+- I also used the following website to test responsiveness:
+  - [Am I Responsive](https://ui.dev/amiresponsive?url=https://elindalenback.github.io/birthday-quiz-project2/)
+
+### Friends and Family User Testing
+
+Friends and family members were asked to review the site and documentation to point out any bugs and/or user experience issues.
+
+### Fixed Bugs
+
+#### Issue: HTML Validation not functioning
+
+**Solution:** Introduced a new `checkValidation` function to resolve conflicts and successfully enforce form input validation.
+
+#### Issue: CSS Validator Error in Letter Spacing
+
+**Solution:** Corrected a CSS validator error by adjusting the `letter-spacing` syntax from "letter-spacing: 1" to the accurate and functional "letter-spacing: 1px."
+
+#### Issue: Incorrect Favicon Filepath
+
+**Solution:** Rectified a wrong filepath to the favicon by updating it to the correct location "assets/favicon/...," ensuring the proper display of the favicon on the website.
+
+### Frameworks - Libraries - Programs Used
+
+- [Am I Responsive](http://ami.responsivedesign.is/) - Used to verify responsiveness of website on different devices.
+- [Responsinator](http://www.responsinator.com/) - Used to verify responsiveness of website on different devices.
+- [Balsamiq](https://balsamiq.com/) - Used to generate Wireframe images.
+- [Chrome Dev Tools](https://developer.chrome.com/docs/devtools/) - Used for overall development and tweaking, including testing responsiveness and performance.
+- [GitHub](https://github.com/) - Used for version control and hosting.
+- [Google Fonts](https://fonts.google.com/) - Used to import and alter fonts on the page.
+- [W3C](https://www.w3.org/) - Used for HTML & CSS Validation.
+- [JSHint](https://jshint.com/) - Used for javascript valifation.
+- [Coolors](https://coolors.co/) - Used to create colour palette.
+- [Favicon](https://favicon.io/) - Used to create the favicon.
+
+## Deployment
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
+  - In the GitHub repository, navigate to the Settings tab
+  - Under 'Code and automation' choose down to 'Pages'
+  - Under 'Source' select the 'Branch' dropdown menu and select the main branch.
+  - Save and the sight is now published.
+
+The live link can be found here - <https://elindalenback.github.io/birthday-quiz-project2/>
 
