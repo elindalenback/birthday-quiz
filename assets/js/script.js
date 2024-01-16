@@ -248,7 +248,6 @@ function showScore() {
     restartButton.addEventListener('click', function () {
         window.location.href = window.location.href; // Reload the page by setting the URL to itself
     });
-    
 }
 
 /**

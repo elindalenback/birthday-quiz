@@ -269,3 +269,24 @@ Friends and family members were asked to review the site and documentation to po
 
 The live link can be found here - <https://elindalenback.github.io/birthday-quiz-project2/>
 
+## Credits
+
+In this section you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism.
+
+You can break the credits section up into Content and Media, depending on what you have included in your project.
+
+### Content
+
+- The Birthday Quiz Game was inspired by the Youtube Videos [Build A Quiz App With JavaScript](https://www.youtube.com/watch?v=riDzcEQbX6k) and [How To Make Quiz App Using JavaScript | Build Quiz App With HTML CSS & JavaScript](https://www.youtube.com/watch?v=PBcqGxrr9g8)
+
+- Other helpful resources: 
+  - The Youtube Video [JAVASCRIPT FOR BEGINNERS: Making Buttons Work](https://www.youtube.com/watch?v=DABVLJjnVUs)
+  - [ChatGPT](https://chat.openai.com/)
+  - [CodeInstitute](https://codeinstitute.net/)
+
+### Media
+
+- The photos used as the picture of Amanda in the footer is created with [AI](https://openai.com/dall-e-3)
+
+### Acknowledgement
+I also want to dedicate an extra thank you to my fellow student, Anton Eriksson. Thank you for the brainstorming and for your much-appreciated input.
